@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - MA03 - Question 1</title>
+    <style>
+    body {
+    	font-family: Arial, Verdana;
+    	color:#999;
+    }
+
+	</style>
+<body>
+
+<!--Contact Form-->
+<form id="myForm">
+	<p>First Name</p>
+	<input id="firstName" type ="text" name="First Name" pattern:"^[A-Z a-z.'-]+$">
+	<p>Last Name</p>
+	<input id="lastName" type ="text" name="Last Name" pattern:"^[A-Z a-z.'-]+$">
+	<p>E-mail adress</p>
+	<input id="emailAdress" type ="text" name="E-mail adrress" pattern:"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+	<p>Phone number</p>
+	<input  id="phoneNumber" type="text" name="Phone number" pattern:"^[0-9]$"><br>
+	<button id="submit" type="button" onclick="inputValidator()">Submit</button>
+
+</form>
+
+
+<script src="script.js"></script>
+</body>
+</html>
